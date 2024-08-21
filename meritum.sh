@@ -31,15 +31,15 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 # autosuggestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/home/$USER/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-(cd ~/$USER/ && git clone https://github.com/MichalPrzyl/nvim_config nvim)
+(cd ~ && git clone https://github.com/MichalPrzyl/nvim_config nvim)
 
 # my .zshrc
-(cd ~/$USER/ && git clone https://github.com/MichalPrzyl/zsh_config)
-(mv ~/$USER/.zshrc .zshrc_back)
-(mv ~/$USER/zsh_config/.zshrc ~/$USER)
-(mkdir ~/$USER/bin)
-(mv ~/$USER/zsh_config/bin ~/$USER/bin)
-(rm -rf ~/$USER/zsh_config)
+(cd ~ && git clone https://github.com/MichalPrzyl/zsh_config)
+(mv ~/.zshrc .zshrc_back)
+(mv ~/zsh_config/.zshrc ~/$USER)
+(mkdir ~/bin)
+(mv ~/zsh_config/bin ~/$USER/bin)
+(rm -rf ~/zsh_config)
 
 
 
